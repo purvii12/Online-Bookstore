@@ -24,6 +24,7 @@ Cloud BookHub demonstrates a production-ready serverless e-commerce pattern on A
 
 ## Architecture
 ![Cloud BookHub Architecture](./architecture.png)
+<br>
 *Cloud BookHub architecture: React on S3+CloudFront → API Gateway+Lambda → RDS MySQL (planned).*
 
 ---
@@ -95,7 +96,7 @@ Create API Gateway HTTP API with GET /books → Lambda integration
 Test: https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/books(replace with your id)
 
 ---
-
+## Networking
 ![Networking Architecture](./networkingnvpc.png)
 
 ---
