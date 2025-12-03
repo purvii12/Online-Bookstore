@@ -12,9 +12,6 @@
 </p>
 
 ---
-![Screenshot](./architecture-diagram.png)  
-*Cloud BookHub architecture: React on S3+CloudFront → API Gateway+Lambda → RDS MySQL (planned).*
----
 
 ## About The Project
 
@@ -23,12 +20,13 @@ Cloud BookHub demonstrates a production-ready serverless e-commerce pattern on A
 ## UI
 ![Cloud BookHub UI](./homeui.png)
 
-
-Features include book search/filtering, details modal, client-side cart, and rupee pricing. Infrastructure auto-scales with serverless components and uses AWS Certificate Manager for HTTPS [web:2].
+---
 
 ## Architecture
 ![Cloud BookHub Architecture](./architecture.png)
-*High-level architecture showing CloudFront, S3, API Gateway, Lambda, and RDS.*
+*Cloud BookHub architecture: React on S3+CloudFront → API Gateway+Lambda → RDS MySQL (planned).*
+
+---
 
 ## Key Features
 
@@ -97,9 +95,10 @@ Create API Gateway HTTP API with GET /books → Lambda integration
 Test: https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/books(replace with your id)
 
 ---
-![Networking Architecture](./networkingvpc.png)
 
+![Networking Architecture](./networkingnvpc.png)
 
+---
 
 ## Usage
 
