@@ -20,7 +20,15 @@
 
 Cloud BookHub demonstrates a production-ready serverless e-commerce pattern on AWS. The React SPA serves book catalog via CloudFront CDN from S3, with backend API powered by Lambda behind API Gateway. Full CI/CD pipeline automates deployments from GitHub, and CloudWatch provides observability [web:1].
 
+## UI
+![Cloud BookHub UI](./homeui.png)
+
+
 Features include book search/filtering, details modal, client-side cart, and rupee pricing. Infrastructure auto-scales with serverless components and uses AWS Certificate Manager for HTTPS [web:2].
+
+## Architecture
+![Cloud BookHub Architecture](./architecture.png)
+*High-level architecture showing CloudFront, S3, API Gateway, Lambda, and RDS.*
 
 ## Key Features
 
@@ -89,6 +97,9 @@ Create API Gateway HTTP API with GET /books → Lambda integration
 Test: https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/books(replace with your id)
 
 ---
+![Networking Architecture](./networkingvpc.png)
+
+
 
 ## Usage
 
@@ -104,6 +115,9 @@ git add .
 git commit -m "Update UI"
 git push origin main
 
+
+## CI/CD 
+![Cloud BookHub Pipeline](./codebuild.png)
 ---
 
 ## ACM Certificate Setup
