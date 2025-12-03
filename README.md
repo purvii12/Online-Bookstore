@@ -37,30 +37,33 @@ Features include book search/filtering, details modal, client-side cart, and rup
 
 ## Tech Stack
 
-| Technology | Purpose | 
-|------------|---------|
-| React 18 | Frontend framework |
-| Amazon S3 | Static website hosting |
-| Amazon CloudFront | Global CDN + HTTPS |
-| AWS Lambda (Node.js 18) | Serverless backend |
-| Amazon API Gateway | REST API management |
-| Amazon RDS MySQL | Planned database |
-| AWS CodePipeline | CI/CD orchestration |
-| AWS CodeBuild | Automated builds |
-| Amazon CloudWatch | Monitoring and logs |
-| AWS Certificate Manager | SSL/TLS certificates |
+| Technology | Purpose |
+| ---------- | ------- |
+| ![React](https://img.shields.io/badge/React_18-61DAFB?logo=react&logoColor=000000) | Frontend framework |
+| ![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?logo=amazons3&logoColor=ffffff) | Static website hosting |
+| ![CloudFront](https://img.shields.io/badge/Amazon_CloudFront-8C4FFF?logo=amazonaws&logoColor=ffffff) | Global CDN + HTTPS |
+| ![Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=aws-lambda&logoColor=000000) | Serverless backend (Node.js 18) |
+| ![API Gateway](https://img.shields.io/badge/Amazon_API_Gateway-FF4F8B?logo=amazonapigateway&logoColor=ffffff) | REST API management |
+| ![RDS MySQL](https://img.shields.io/badge/Amazon_RDS_MySQL-527FFF?logo=amazonrds&logoColor=ffffff) | Planned database |
+| ![CodePipeline](https://img.shields.io/badge/AWS_CodePipeline-1F73B7?logo=aws&logoColor=ffffff) | CI/CD orchestration |
+| ![CodeBuild](https://img.shields.io/badge/AWS_CodeBuild-6DB33F?logo=aws&logoColor=ffffff) | Automated builds |
+| ![CloudWatch](https://img.shields.io/badge/Amazon_CloudWatch-FF4F8B?logo=amazoncloudwatch&logoColor=ffffff) | Monitoring and logs |
+| ![ACM](https://img.shields.io/badge/AWS_Certificate_Manager-232F3E?logo=amazonaws&logoColor=ffffff) | SSL/TLS certificates |
+
 
 ## Infrastructure Components
 
 | AWS Service | Configuration |
-|-------------|--------------|
-| S3 Bucket | `bookstore-frontend-khand-123` with public read policy |
-| CloudFront | Redirects HTTP to HTTPS, S3 website endpoint origin |
-| Lambda | `bookstore-get-books` with in-memory book data |
-| API Gateway | HTTP API with GET `/books` route |
-| CodePipeline | GitHub → CodeBuild → S3 deploy stages |
-| IAM Roles | Least-privilege for Lambda, CodeBuild, CodePipeline |
-| CloudWatch | Lambda logs in `/aws/lambda/bookstore-get-books` |
+| ----------- | ------------- |
+| ![S3](https://img.shields.io/badge/Amazon_S3-569A31?logo=amazons3&logoColor=ffffff) | `bookstore-frontend-khand-123` with public read policy |
+| ![CloudFront](https://img.shields.io/badge/Amazon_CloudFront-8C4FFF?logo=amazonaws&logoColor=ffffff) | Redirects HTTP to HTTPS, S3 website endpoint origin |
+| ![Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?logo=aws-lambda&logoColor=000000) | `bookstore-get-books` with in-memory catalog data |
+| ![API Gateway](https://img.shields.io/badge/Amazon_API_Gateway-FF4F8B?logo=amazonapigateway&logoColor=ffffff) | HTTP API with GET `/books` route |
+| ![CodePipeline](https://img.shields.io/badge/AWS_CodePipeline-1F73B7?logo=aws&logoColor=ffffff) | GitHub → CodeBuild → S3 deploy stages |
+| ![CodeBuild](https://img.shields.io/badge/AWS_CodeBuild-6DB33F?logo=aws&logoColor=ffffff) | Node.js 18 build, `npm install` and `npm run build` |
+| ![CloudWatch](https://img.shields.io/badge/Amazon_CloudWatch-FF4F8B?logo=amazoncloudwatch&logoColor=ffffff) | Lambda logs in `/aws/lambda/bookstore-get-books` |
+| ![ACM](https://img.shields.io/badge/AWS_Certificate_Manager-232F3E?logo=amazonaws&logoColor=ffffff) | Public cert in `us-east-1` attached to CloudFront |
+
 
 ---
 
@@ -83,7 +86,7 @@ Create CloudFront distribution pointing to S3 website endpoint
 4. **Backend deployment**
 Create Lambda function with provided code
 Create API Gateway HTTP API with GET /books → Lambda integration
-Test: https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/books
+Test: https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/books(replace with your id)
 
 ---
 
