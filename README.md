@@ -3,7 +3,7 @@
   <p align="center">
     Scalable serverless online bookstore built on AWS with React frontend, Lambda backend, and full CI/CD pipeline.
     <br />
-    <a href="https://d1fak5wout0ojg.cloudfront.net/">View Demo</a>
+    <a href="(https://online-bookstore-frontend-zyyx.onrender.com/)">View Demo</a>
     ·
     <a href="https://github.com/purvii12/Online-Bookstore/issues">Report Bug</a>
     ·
@@ -103,7 +103,7 @@ Test: https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/books(replace with
 
 ## Usage
 
-1. Access frontend via CloudFront URL: `https://d1fak5wout0ojg.cloudfront.net/`
+1. Access frontend via URL: `https://online-bookstore-frontend-zyyx.onrender.com/`
 2. Browse books, use search and category filters
 3. Click book cards for details modal with stock info
 4. Add items to cart, adjust quantities, view running totals
