@@ -3,7 +3,7 @@
   <p align="center">
     Scalable serverless online bookstore built on AWS with React frontend, Lambda backend, and full CI/CD pipeline.
     <br />
-    <a href="(https://online-bookstore-frontend-zyyx.onrender.com/)">View Demo</a>
+    <a href="https://online-bookstore-frontend-zyyx.onrender.com">View Demo</a>
     ·
     <a href="https://github.com/purvii12/Online-Bookstore/issues">Report Bug</a>
     ·
